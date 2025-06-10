@@ -1,0 +1,9 @@
+# Default settings for DeepChronos
+deepseek:
+  model: deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
+  dtype: half
+  url: http://localhost:8001/generate
+
+autogluon:
+  eval_metric: MASE
+  chronos_variant: ChronosFineTuned[bolt_small]  # or Chronos, ChronosBoltBase
