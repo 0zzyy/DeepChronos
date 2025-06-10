@@ -1,0 +1,16 @@
+# List your forecasting tasks here.
+# Each entry must include:
+#   dataset_path: path or HF repo (autogluon/chronos_datasets)
+#   dataset_config: config name (e.g., monash_traffic)
+#   horizon: prediction length (int)
+#   seasonality: seasonal period (e.g., 12 for monthly)
+
+- dataset_path: autogluon/chronos_datasets
+  dataset_config: monash_traffic
+  horizon: 24
+  seasonality: 24
+
+- dataset_path: autogluon/chronos_datasets
+  dataset_config: monash_australian_electricity
+  horizon: 12
+  seasonality: 12
