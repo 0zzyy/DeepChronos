@@ -19,3 +19,24 @@ cd DeepChronos
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
+
+Configuration
+config.yaml: global settings (model variants, default target columns)
+
+tasks.yaml: list of datasets to process
+
+See samples below.
+
+Usage
+bash
+Copy
+python3 deepchronos_explain.py
+Project Structure
+deepchronos_explain.py: main pipeline (train + explain)
+
+config.yaml & tasks.yaml: dataset definitions
+
+logs/: runtime logs
+
+models/: saved Chronos models
+
